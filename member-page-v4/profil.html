@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styleProfil.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Profil Utilisateur</title>
+</head>
+
+<body>
+  <main>
+    <section>
+      <div class="profile-header">
+        <div class="cover-image"></div>
+
+        <div class="profile-info d-flex align-items-center">
+          <div class="profile-image">
+            <img src="https://via.placeholder.com/181" alt="User Image" class="rounded-circle">
+          </div>
+          <div class="profile-details">
+            <a href="" title="Anne-Hélène Peltier">
+              Anne-Hélène Peltier <span class="online-status">•</span>
+            </a>
+          </div>
+
+          <div class="cta-special ml-auto">
+
+            <div>
+              <a class="um-login btn-recommendation">Recommander</a>
+            </div>
+            <div>
+              <a class="um-login btn-thanks">Remercier</a>
+            </div>
+
+          </div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+      <div class="profile-nav">
+        <div class="nav-item active" data-tab="about">
+          <a href="#" title="About">
+            <span class="icon-style icon-user"></span>
+            <span>A propos</span>
+          </a>
+        </div>
+        <div class="nav-item" data-tab="recommendations">
+          <a href="#" title="Recommendations">
+            <span class=" icon-style icon-pencil"></span>
+            <span>Recommandations</span>
+          </a>
+        </div>
+        <div class="nav-item" data-tab="thanks">
+          <a href="#" title="Thanks">
+            <span class=" icon-style icon-comment"></span>
+            <span>Remerciements</span>
+          </a>
+        </div>
+        <div class="nav-item" data-tab="meetings">
+          <a href="#" title="Meetings">
+            <span class="icon-comments"></span>
+            <span>Réunions</span>
+          </a>
+        </div>
+        <div class="nav-item" data-tab="presentations">
+          <a href="#" title="Presentations">
+            <span class=" icon-style icon-file-alt"></span>
+            <span>Présentations</span>
+          </a>
+        </div>
+        <div class="clear"></div>
+      </div>
+
+      <div class="tab-content" id="about">
+        <h2>A propos</h2>
+        <div class="info-item">
+          <strong class="type-features"> <i class="fa-regular fa-address-card"></i></i> Nom</strong>
+          <span>ALLEZ MIEUX</span>
+        </div>
+        <div class="info-item">
+          <strong class="type-features"><i class="fa-solid outline fa-circle-info"></i> Description</strong>
+          <span>
+            COACH DE VIE ET COACH EN DEVELOPPEMENT PERSONNEL
+            Quelque soit votre mal être dans votre vie privée ou professionnelle, le coaching que je vous propose
+            va vous aider à ressentir un bien-être et un équilibre.
+          </span>
+        </div>
+
+        <div class="info-item">
+          <strong class="type-features">E-mail</strong>
+          <span>contact@allezmieux.com</span>
+        </div>
+        <div class="info-item">
+          <strong class="type-features">Tel :</strong>
+          <span>06 88 08 27 27</span>
+        </div>
+        <div class="info-item">
+          <strong class="type-features">URL du site web</strong>
+          <span><a href="https://www.allezmieux.com" target="_blank">https://www.allezmieux.com</a></span>
+        </div>
+        <div class="info-item">
+          <strong class="type-features">Réseaux sociaux</strong>
+          <span><a href="https://www.facebook.com/AnneHelenePeltier/">facebook</a> </span>
+        </div>
+      </div>
+
+      <div class="tab-content" id="recommendations" style="display: none;">
+        <h2>Recommendations</h2>
+        <p>Cet utilisateur n'a pas encore de recommandations.</p>
+      </div>
+
+      <div class="tab-content" id="thanks" style="display: none;">
+        <h2>Thanks</h2>
+        <p>Cet utilisateur n'a pas encore de remerciements.</p>
+      </div>
+
+      <div class="tab-content" id="meetings" style="display: none;">
+        <h2>Meetings</h2>
+        <p>Dernière réunion : Réunion avec XYZ le 01/01/2022</p>
+      </div>
+
+      <div class="tab-content" id="presentations" style="display: none;">
+        <h2>Presentations</h2>
+        <p>Aucune présentation soumise pour l'instant.</p>
+      </div>
+    </section>
+
+    <!-- Modal Template -->
+    <div class="modal fade" id="recommendationModal" tabindex="-1" role="dialog"
+      aria-labelledby="recommendationModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="recommendationModalLabel">Recommandation</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <p>Yescom recommande :</p>
+            <img id="recommendedImage" src="" alt="Recommandé" class="rounded-circle mb-3"
+              style="width: 150px; height: 150px;">
+            <h5 id="recommendedName"></h5>
+            <div class="form-group">
+              <div class="icon-share-features">
+                <i class=" fa-solid fa-share fa-beat"></i>
+              </div>
+
+              <input type="text" class="form-control text-center input-with-cursor" id="recommendationSubject"
+                placeholder="Objet de la recommandation" required>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submitRecommendation">Valider</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="thanksModal" tabindex="-1" role="dialog" aria-labelledby="thanksModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="thanksModalLabel">Remerciement</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <p>Yescom remercie :</p>
+            <img id="thanksImage" src="" alt="Remercié" class="rounded-circle mb-3"
+              style="width: 150px; height: 150px;">
+            <h5 id="thanksRecommendedName"></h5>
+            <div class="form-group">
+              <i class="custom-arrow"></i>
+              <input type="text" class="form-control text-center input-with-cursor" id="thanksSubject"
+                placeholder="Objet du remerciement" required>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submitThanks">Valider</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="scriptProfil.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>

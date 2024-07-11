@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Members Page</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <script>
+    const loggedInUserName = 'Yescom';
+  </script>
+
+  <div class="container">
+    <h1 class="text-center my-5">Adhérent(e)s</h1>
+    <div class="container-search d-flex mb-3">
+      <input type="text" class="form-control w-75" placeholder="Rechercher ...">
+      <button class="btn btn-primary w-25 ml-2">Recherche</button>
+    </div>
+    <div class="sort-filter-container d-flex justify-content-between align-items-center mb-3">
+      <div class="sorting d-flex align-items-center">
+        <label for="sort" class="mr-2">Classer par :</label>
+        <select id="sort" class="form-control">
+          <option>Nouvel utilisateur</option>
+          <option>Nom de l'entreprise</option>
+          <option>Prénom et nom</option>
+        </select>
+      </div>
+      <div class="filters">
+        <a href="#">Plus de filtre</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <div class="member-card">
+          <a class="icon-profil" href="profil.html">
+            <i class="fa fa-eye" aria-hidden="true" data-profile="anne-helene-peltier"></i>
+          </a>
+          <img src="images/PELTIER-Anne-Helene_web.jpg" alt="Anne-Hélène Peltier">
+          <h5>Anne-Hélène Peltier</h5>
+          <p class="rating">AH PELTIER COACHING</p>
+          <div class="content-cta">
+            <button class="btn btn-primary btn-recommendation">RECOMMANDATION</button>
+            <button class="btn btn-primary btn-thanks">REMERCIEMENT</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="member-card">
+          <a class="icon-profil" href="">
+            <i class="fa fa-eye" aria-hidden="true" data-profile="anne-helene-peltier"></i>
+          </a>
+          <img src="images/LE-BOUCHER-MARIE_02-JTR_2023.jpg" alt="David Desforges">
+          <h5>Nicole LE BOUCHER</h5>
+          <p class="rating">ATELIERS CENTRE BRETAGNE</p>
+          <div class="content-cta">
+            <button class="btn btn-primary btn-recommendation">RECOMMANDATION</button>
+            <button class="btn btn-primary btn-thanks">REMERCIEMENT</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="member-card">
+          <a class="icon-profil" href="">
+            <i class="fa fa-eye" aria-hidden="true" data-profile="Dominique Lepetit"></i>
+          </a>
+          <img src="images/Dominique Lepetit.jpg" alt="Dominique Lepetit">
+          <h5>Dominique Lepetit</h5>
+          <p class="rating">FID'OUEST</p>
+          <div class="content-cta">
+            <button class="btn btn-primary btn-recommendation">RECOMMANDATION</button>
+            <button class="btn btn-primary btn-thanks">REMERCIEMENT</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="member-card">
+          <a class="icon-profil" href="">
+            <i class="fa fa-eye" aria-hidden="true" data-profile="anne-helene-peltier"></i>
+          </a>
+          <img src="images/Jean-François_Gardy.jpg" alt="Jean-François Gardy">
+          <h5>Jean-François Gardy</h5>
+          <p class="rating">AGYL SYSTEMS</p>
+          <div class="content-cta">
+            <button class="btn btn-primary btn-recommendation">RECOMMANDATION</button>
+            <button class="btn btn-primary btn-thanks">REMERCIEMENT</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="member-card">
+          <a class="icon-profil" href="">
+            <i class="fa fa-eye" aria-hidden="true" data-profile="anne-helene-peltier"></i>
+          </a>
+          <img src="images/NICOL-Aurelie_01-JTR_2023.jpg" alt="Aurélie NICOL GUILLAUME">
+          <h5>Aurélie NICOL GUILLAUME</h5>
+          <p class="rating">ANG CONSEIL & COURTAGE</p>
+          <div class="content-cta">
+            <button class="btn btn-primary btn-recommendation">RECOMMANDATION</button>
+            <button class="btn btn-primary btn-thanks">REMERCIEMENT</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="member-card">
+          <a class="icon-profil" href="">
+            <i class="fa fa-eye" aria-hidden="true" data-profile="anne-helene-peltier"></i>
+          </a>
+          <img src="images/maud_Audrain-LeLoudec.jpg" alt="Maud AUDRAIN-LE LOUDEC">
+          <h5>Maud AUDRAIN-LE LOUDEC</h5>
+          <p class="rating">Assistance TPME Argoat</p>
+          <div class="content-cta">
+            <button class="btn btn-primary btn-recommendation">RECOMMANDATION</button>
+            <button class="btn btn-primary btn-thanks">REMERCIEMENT</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="member-card">
+          <a class="icon-profil" href="">
+            <i class="fa fa-eye" aria-hidden="true" data-profile="anne-helene-peltier"></i>
+          </a>
+          <img src="images/logo-CE.png" alt="Mathieu MICHELET">
+          <h5>Mathieu MICHELET </h5>
+          <p class="rating">CAISSE D'EPARGNE BRETAGNE PAYS DE LOIRE</p>
+          <div class="content-cta">
+            <button class="btn btn-primary btn-recommendation">RECOMMANDATION</button>
+            <button class="btn btn-primary btn-thanks">REMERCIEMENT</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="member-card">
+          <a class="icon-profil" href="">
+            <i class="fa fa-eye" aria-hidden="true" data-profile="anne-helene-peltier"></i>
+          </a>
+          <img src="images/Sylvie_LEMENE.jpg" alt="Jean-Charles Théaud">
+          <h5>Sylvie LE MENE</h5>
+          <p class="rating">CAPIFRANCE</p>
+          <div class="content-cta">
+            <button class="btn btn-primary btn-recommendation">RECOMMANDATION</button>
+            <button class="btn btn-primary btn-thanks">REMERCIEMENT</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="member-card">
+          <a class="icon-profil" href="">
+            <i class="fa fa-eye" aria-hidden="true" data-profile="anne-helene-peltier"></i>
+          </a>
+          <img src="images/Yannick_Venant.jpg" alt="Jean-Charles Théaud">
+          <h5>Yannick Venant</h5>
+          <p class="rating">Les Charpentes Armoricaines</p>
+          <div class="content-cta">
+            <button class="btn btn-primary btn-recommendation">RECOMMANDATION</button>
+            <button class="btn btn-primary btn-thanks">REMERCIEMENT</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="member-card">
+          <a class="icon-profil" href="">
+            <i class="fa fa-eye" aria-hidden="true" data-profile="anne-helene-peltier"></i>
+          </a>
+          <img src="images/Adama.jpg" alt="Jean-Charles Théaud">
+          <h5>Adama Condé</h5>
+          <p class="rating">DALAGNA SECURITE</p>
+          <div class="content-cta">
+            <button class="btn btn-primary btn-recommendation">RECOMMANDATION</button>
+            <button class="btn btn-primary btn-thanks">REMERCIEMENT</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="member-card">
+          <a class="icon-profil" href="">
+            <i class="fa fa-eye" aria-hidden="true" data-profile="anne-helene-peltier"></i>
+          </a>
+          <img src="images/David Desforges.jpg" alt="Jean-Charles Théaud">
+          <h5>David Desforges</h5>
+          <p class="rating">DAVID DESFORGES ETANCHEITE</p>
+          <div class="content-cta">
+            <button class="btn btn-primary btn-recommendation">RECOMMANDATION</button>
+            <button class="btn btn-primary btn-thanks">REMERCIEMENT</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="member-card">
+          <a class="icon-profil" href="">
+            <i class="fa fa-eye" aria-hidden="true" data-profile="anne-helene-peltier"></i>
+          </a>
+          <img src="images/Jean-Charles_Theaud.jpg" alt="Jean-Charles Théaud">
+          <h5>Jean-Charles Théaud</h5>
+          <p class="rating">EMAP</p>
+          <div class="content-cta">
+            <button class="btn btn-primary btn-recommendation">RECOMMANDATION</button>
+            <button class="btn btn-primary btn-thanks">REMERCIEMENT</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="member-card">
+          <a class="icon-profil" href="">
+            <i class="fa fa-eye" aria-hidden="true" data-profile="anne-helene-peltier"></i>
+          </a>
+          <img src="images/GESTIN_Dominique_web.jpg" alt="Jean-Charles Théaud">
+          <h5>Dominique Gestin</h5>
+          <p class="rating">FIDOUEST</p>
+          <div class="content-cta">
+            <button class="btn btn-primary btn-recommendation">RECOMMANDATION</button>
+            <button class="btn btn-primary btn-thanks">REMERCIEMENT</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="member-card">
+          <a class="icon-profil" href="">
+            <i class="fa fa-eye" aria-hidden="true" data-profile="anne-helene-peltier"></i>
+          </a>
+          <img src="images/GADAT_Patrick_web.jpg" alt="Jean-Charles Théaud">
+          <h5>Patrick GADAT</h5>
+          <p class="rating">Patrick Gadat Conseil</p>
+          <div class="content-cta">
+            <button class="btn btn-primary btn-recommendation">RECOMMANDATION</button>
+            <button class="btn btn-primary btn-thanks">REMERCIEMENT</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="member-card">
+          <a class="icon-profil" href="">
+            <i class="fa fa-eye" aria-hidden="true" data-profile="anne-helene-peltier"></i>
+          </a>
+          <img src="images/LogoHyprevia.png" alt="Jean-Charles Théaud">
+          <h5>Nathalie ONNILLON </h5>
+          <p class="rating">HYPREVIA FORMATION</p>
+          <div class="content-cta">
+            <button class="btn btn-primary btn-recommendation">RECOMMANDATION</button>
+            <button class="btn btn-primary btn-thanks">REMERCIEMENT</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="member-card">
+          <a class="icon-profil" href="">
+            <i class="fa fa-eye" aria-hidden="true" data-profile="anne-helene-peltier"></i>
+          </a>
+          <img src="images/Franck_Picot.jpg" alt="Jean-Charles Théaud">
+          <h5>Franck Picot</h5>
+          <p class="rating">Il Carpaccio Ristorente</p>
+          <div class="content-cta">
+            <button class="btn btn-primary btn-recommendation">RECOMMANDATION</button>
+            <button class="btn btn-primary btn-thanks">REMERCIEMENT</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="member-card">
+          <a class="icon-profil" href="">
+            <i class="fa fa-eye" aria-hidden="true" data-profile="anne-helene-peltier"></i>
+          </a>
+          <img src="images/Stéphanie_Rocaboy.jpg" alt="Jean-Charles Théaud">
+          <h5>Stéphanie Rocaboy</h5>
+          <p class="rating">JARDI LOCATION & PAYSAGE</p>
+          <div class="content-cta">
+            <button class="btn btn-primary btn-recommendation">RECOMMANDATION</button>
+            <button class="btn btn-primary btn-thanks">REMERCIEMENT</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="member-card">
+          <a class="icon-profil" href="">
+            <i class="fa fa-eye" aria-hidden="true" data-profile="anne-helene-peltier"></i>
+          </a>
+          <img src="images/Virginie_Picot.jpg" alt="Jean-Charles Théaud">
+          <h5>Virginie Picot</h5>
+          <p class="rating">MAAF ASSURANCES </p>
+          <div class="content-cta">
+            <button class="btn btn-primary btn-recommendation">RECOMMANDATION</button>
+            <button class="btn btn-primary btn-thanks">REMERCIEMENT</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="member-card">
+          <a class="icon-profil" href="">
+            <i class="fa fa-eye" aria-hidden="true" data-profile="anne-helene-peltier"></i>
+          </a>
+          <img src="images/Cedric_Noel.jpg" alt="Jean-Charles Théaud">
+          <h5>Cédric Noël</h5>
+          <p class="rating">NOEL-MORVAN MENUISERIE</p>
+          <div class="content-cta">
+            <button class="btn btn-primary btn-recommendation">RECOMMANDATION</button>
+            <button class="btn btn-primary btn-thanks">REMERCIEMENT</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="member-card">
+          <a class="icon-profil" href="">
+            <i class="fa fa-eye" aria-hidden="true" data-profile="anne-helene-peltier"></i>
+          </a>
+          <img src="images/logoProprteteBretagneCentre.png" alt="Jean-Charles Théaud">
+          <h5>Marie-Laure BILLY</h5>
+          <p class="rating">Directrice d'Exploitation</p>
+          <div class="content-cta">
+            <button class="btn btn-primary btn-recommendation">RECOMMANDATION</button>
+            <button class="btn btn-primary btn-thanks">REMERCIEMENT</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="member-card">
+          <a class="icon-profil" href="">
+            <i class="fa fa-eye" aria-hidden="true" data-profile="anne-helene-peltier"></i>
+          </a>
+          <img src="images/ViolaineQuemener.png" alt="Jean-Charles Théaud">
+          <h5>Violaine QUEMENER</h5>
+          <p class="rating">Avocat</p>
+          <div class="content-cta">
+            <button class="btn btn-primary btn-recommendation">RECOMMANDATION</button>
+            <button class="btn btn-primary btn-thanks">REMERCIEMENT</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="member-card">
+          <a class="icon-profil" href="">
+            <i class="fa fa-eye" aria-hidden="true" data-profile="anne-helene-peltier"></i>
+          </a>
+          <img src="images/marylen_Jean.jpg" alt="Jean-Charles Théaud">
+          <h5>Marylène Jan</h5>
+          <p class="rating">RANDSTAD</p>
+          <div class="content-cta">
+            <button class="btn btn-primary btn-recommendation">RECOMMANDATION</button>
+            <button class="btn btn-primary btn-thanks">REMERCIEMENT</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="member-card">
+          <a class="icon-profil" href="">
+            <i class="fa fa-eye" aria-hidden="true" data-profile="anne-helene-peltier"></i>
+          </a>
+          <img src="images/Gilles Le Gal.jpg" alt="Jean-Charles Théaud">
+          <h5>Gilles Le Gal </h5>
+          <p class="rating">RENAULT PONTIVY - Groupe BODEMER</p>
+          <div class="content-cta">
+            <button class="btn btn-primary btn-recommendation">RECOMMANDATION</button>
+            <button class="btn btn-primary btn-thanks">REMERCIEMENT</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="member-card">
+          <a class="icon-profil" href="">
+            <i class="fa fa-eye" aria-hidden="true" data-profile="anne-helene-peltier"></i>
+          </a>
+          <img src="images/David Le Roy.jpg" alt="Jean-Charles Théaud">
+          <h5>David Le Roy </h5>
+          <p class="rating">RIKA PONTIVY</p>
+          <div class="content-cta">
+            <button class="btn btn-primary btn-recommendation">RECOMMANDATION</button>
+            <button class="btn btn-primary btn-thanks">REMERCIEMENT</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="member-card">
+          <a class="icon-profil" href="">
+            <i class="fa fa-eye" aria-hidden="true" data-profile="anne-helene-peltier"></i>
+          </a>
+          <img src="images/Pascale_Thomas.jpg" alt="Jean-Charles Théaud">
+          <h5>Pascale Thomas </h5>
+          <p class="rating">RMN</p>
+          <div class="content-cta">
+            <button class="btn btn-primary btn-recommendation">RECOMMANDATION</button>
+            <button class="btn btn-primary btn-thanks">REMERCIEMENT</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="member-card">
+          <a class="icon-profil" href="">
+            <i class="fa fa-eye" aria-hidden="true" data-profile="anne-helene-peltier"></i>
+          </a>
+          <img src="images/LE-MERCIER-Nathalie-JTR_2023.jpg" alt="Jean-Charles Théaud">
+          <h5>Nathalie LE MERCIER</h5>
+          <p class="rating">SLM AGENCEMENT</p>
+          <div class="content-cta">
+            <button class="btn btn-primary btn-recommendation">RECOMMANDATION</button>
+            <button class="btn btn-primary btn-thanks">REMERCIEMENT</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="member-card">
+          <a class="icon-profil" href="">
+            <i class="fa fa-eye" aria-hidden="true" data-profile="anne-helene-peltier"></i>
+          </a>
+          <img src="images/serge_martin.jpg" alt="Jean-Charles Théaud">
+          <h5>Serge Martin</h5>
+          <p class="rating">SOMIA ESPACE EMERAUDE</p>
+          <div class="content-cta">
+            <button class="btn btn-primary btn-recommendation">RECOMMANDATION</button>
+            <button class="btn btn-primary btn-thanks">REMERCIEMENT</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="member-card">
+          <a class="icon-profil" href="">
+            <i class="fa fa-eye" aria-hidden="true" data-profile="anne-helene-peltier"></i>
+          </a>
+          <img src="images/logoSuez.png" alt="Jean-Charles Théaud">
+          <h5>Thierry MOYON</h5>
+          <p class="rating">SUEZ R&V OUEST</p>
+          <div class="content-cta">
+            <button class="btn btn-primary btn-recommendation">RECOMMANDATION</button>
+            <button class="btn btn-primary btn-thanks">REMERCIEMENT</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="member-card">
+          <a class="icon-profil" href="">
+            <i class="fa fa-eye" aria-hidden="true" data-profile="anne-helene-peltier"></i>
+          </a>
+          <img src="images/V-FETILLE-et-A-GUILLEMOT_web.jpg" alt="Jean-Charles Théaud">
+          <h5>Valentin FETILLE & Anthony GUILLEMOT</h5>
+          <p class="rating">SVAE Electricité</p>
+          <div class="content-cta">
+            <button class="btn btn-primary btn-recommendation">RECOMMANDATION</button>
+            <button class="btn btn-primary btn-thanks">REMERCIEMENT</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="member-card">
+          <a class="icon-profil" href="">
+            <i class="fa fa-eye" aria-hidden="true" data-profile="anne-helene-peltier"></i>
+          </a>
+          <img src="images/luc_Dugue.jpg" alt="Jean-Charles Théaud">
+          <h5>Luc DUGUE</h5>
+          <p class="rating">YESCOM</p>
+          <div class="content-cta">
+            <button class="btn btn-primary btn-recommendation">RECOMMANDATION</button>
+            <button class="btn btn-primary btn-thanks">REMERCIEMENT</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Autres membres ici -->
+
+    </div>
+  </div>
+
+  <!-- Modal Template -->
+  <div class="modal fade" id="recommendationModal" tabindex="-1" role="dialog"
+    aria-labelledby="recommendationModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="recommendationModalLabel">Recommandation</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <p>Yescom recommande :</p>
+          <img id="recommendedImage" src="" alt="Recommandé" class="rounded-circle mb-3"
+            style="width: 150px; height: 150px;">
+          <h5 id="recommendedName"></h5>
+          <div class="form-group">
+            <div class="icon-share-features">
+              <i class=" fa-solid fa-share fa-beat"></i>
+            </div>
+
+            <input type="text" class="form-control text-center input-with-cursor" id="recommendationSubject"
+              placeholder="Objet de la recommandation" required>
+          </div>
+          <button type="submit" class="btn btn-primary" id="submitRecommendation">Valider</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="thanksModal" tabindex="-1" role="dialog" aria-labelledby="thanksModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="thanksModalLabel">Remerciement</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <p>Yescom remercie :</p>
+          <img id="thanksImage" src="" alt="Remercié" class="rounded-circle mb-3" style="width: 150px; height: 150px;">
+          <h5 id="thanksRecommendedName"></h5>
+          <div class="form-group">
+            <i class="custom-arrow"></i>
+            <input type="text" class="form-control text-center input-with-cursor" id="thanksSubject"
+              placeholder="Objet du remerciement" required>
+          </div>
+          <button type="submit" class="btn btn-primary" id="submitThanks">Valider</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>

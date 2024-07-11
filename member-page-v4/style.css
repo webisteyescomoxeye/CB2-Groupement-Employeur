@@ -1,0 +1,150 @@
+body {
+  background-color: #f8f9fa;
+}
+
+
+.container {
+  max-width: 1366px;
+}
+
+.content-cta {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 50%;
+
+}
+
+.btn {
+  margin-bottom: 10px;
+}
+
+
+
+h5 {
+  padding-top: 20px;
+}
+
+.member-card img {
+  border-radius: 50%;
+  width: 181px;
+  height: 181px;
+}
+
+.member-card {
+  position: relative;
+  text-align: center;
+  padding: 25px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.member-card .rating {
+  color: #0693e3;
+}
+
+.sort-filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sort-filter-container .filters a {
+  color: #6c757d;
+  text-decoration: none;
+  position: relative;
+}
+
+.sort-filter-container .filters a::after {
+  content: '';
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: middle;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #6c757d transparent transparent transparent;
+}
+
+.container-search {
+  display: flex;
+  align-items: center;
+}
+
+.container-search .form-control {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.btn-primary {
+  background-color: #0693e3;
+  border-color: #0693e3;
+}
+
+
+/* FAKE CURSOR */
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.input-with-cursor::placeholder {
+  position: relative;
+}
+
+.input-with-cursor::placeholder::after {
+  content: '|';
+  position: absolute;
+  animation: blink 1s step-end infinite;
+  opacity: 1;
+}
+
+
+/* ARROW */
+.icon-share-features {
+  transform: rotate(90deg);
+  font-size: 2rem;
+  /* Taille de la flèche */
+  color: #007bff;
+  /* Couleur de la flèche */
+  display: inline-block;
+
+
+}
+
+.icon-share-features:hover {
+  color: #0056b3;
+  /* Couleur de la flèche au survol */
+}
+
+.icon-share-features {
+
+
+  font-weight: 900;
+
+
+}
+
+.icon-profil {
+
+  padding: 15px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.icon-profil>i {
+  color: #4997ea;
+  font-size: 22px;
+}
