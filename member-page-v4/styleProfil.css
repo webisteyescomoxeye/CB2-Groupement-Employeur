@@ -9,7 +9,7 @@ body {
   line-height: 1.5;
   color: rgb(17, 17, 17);
   text-align: left;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(214, 199, 199);
   padding: 0px 0px !important;
   border: 0px;
   overflow: hidden scroll;
@@ -76,6 +76,11 @@ i {
   max-height: 500px;
 }
 
+.features-nameProfil {
+  color: #444;
+  font-size: 28px;
+}
+
 .cover-image {
   text-align: center;
   display: block;
@@ -84,6 +89,11 @@ i {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.couv-profil {
+  background-size: contain;
+  width: inherit;
 }
 
 .profile-info {
@@ -161,7 +171,7 @@ body {
   padding: 10px;
   background-color: #444;
   text-align: center;
-  background-color: #fff !important;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -188,11 +198,14 @@ body {
 }
 
 .nav-item.active a {
-  background-color: #eee;
+  background-color: #498acf;
+  color: #e9ecef !important;
+
 }
 
 .nav-item a:hover {
-  background-color: #eee;
+  background-color: #007bff;
+
 }
 
 .clear {
@@ -211,6 +224,7 @@ body {
 
 .tab-content.active {
   display: block;
+
 }
 
 .icon-style {
@@ -259,7 +273,6 @@ body {
 .info-item {
   display: flex;
   flex-direction: column;
-  background: aliceblue;
   padding: 15px;
   height: 100%;
 
@@ -273,6 +286,7 @@ body {
   border-bottom: solid 2px #eee;
   border-bottom-color: rgb(238, 238, 238);
   padding-bottom: 8px;
+  font-size: 18px;
 }
 
 
